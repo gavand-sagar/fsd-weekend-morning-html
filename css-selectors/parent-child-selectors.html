@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=\, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        span{
+            background-color: yellow;
+        }
+        div>span {
+            background-color: green;
+        }
+
+        p>span {
+            background-color: rgb(128, 28, 0);
+        }
+
+        div>p>span{
+            background-color: blue;
+        }
+        
+    </style>
+</head>
+<body>
+    <div>
+        <span>from div</span>
+        <span>from div</span>
+    </div>
+    <p>
+        <span>Orange</span>
+    </p>
+    <div>
+        <p>
+            <span>Apple</span>
+        </p>
+        <span>Mango</span>
+    </div>
+    <span>in Body</span>
+    <span>in Body</span>
+</body>
+
+</html>

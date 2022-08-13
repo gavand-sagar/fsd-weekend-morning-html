@@ -1,0 +1,32 @@
+.sagar{
+    background-color: orange;
+}
+
+.gavand{
+    color: blue;
+}
+
+.circle{
+    border-radius: 50%;
+    height: 30px;
+    width: 30px;
+}
+
+.blue{
+    background-color: blue;
+}
+
+.red{
+    background-color: red;
+}
+
+.border{
+    border: 3px solid green;
+}
+
+.green-circle{
+    border-radius: 50%;
+    height: 30px;
+    width: 30px;
+    border: 3px solid green;
+}
