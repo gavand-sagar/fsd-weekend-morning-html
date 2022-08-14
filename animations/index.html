@@ -24,14 +24,25 @@
         } */
 
         .glow {
-            height: 30px;
-            width: 100px;
-            background-color: red;
+            height: 500px;
+            width: 400px;
+            /* background: url('../image/mobile-2.png'); */
             position: absolute;
-            animation: custom-blink 1s infinite linear;
+            animation: sagar 1s 3 forwards linear;
         }
 
-        @keyframes custom-blink {
+        @keyframes sagar {
+            0% {
+                /* rotate: 0; */
+                background: url('../image/mobile-2.png');            
+            }
+
+            100% {
+                background: url('../image/m1.jpg');
+            }
+        }
+
+        /* @keyframes sagar {
             0% {
                 rotate: 0;
             }
@@ -39,7 +50,7 @@
             100% {
                rotate: 360deg;
             }
-        }
+        } */
 
         /* button{
             rotate: 90deg;

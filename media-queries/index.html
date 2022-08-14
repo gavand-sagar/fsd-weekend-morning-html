@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            /* background: red; */
+            background: linear-gradient(to right, rgb(143, 5, 5), red, rgb(143, 5, 5));
+        }
+
+        .header {
+            background: linear-gradient(to right, yellow, rgb(205, 205, 11), yellow);
+            position: fixed;
+            top: 0;
+            right: 0;
+            left: 0;
+        }
+        
+        @media screen and (max-width: 767px) {
+            .header {
+                background: linear-gradient(to right, yellow, rgb(205, 205, 11), yellow);
+                position: fixed;
+                right: 0;
+                left: unset;
+                width: 150px;
+                height: 100vh;
+            }
+            .description{
+                width: 300px;
+            }
+        }
+
+
+
+    </style>
+</head>
+
+<body>
+    <div class="header"></div>
+    
+    <div class="description" style="background-color: blue;color:white">asas df asdf sadf sadfas dfsad fsadf sad fsadf sadf safasdf asdf df -- Sagar</div>
+
+    <button>Click me</button>
+</body>
+
+</html>
