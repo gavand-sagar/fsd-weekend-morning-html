@@ -11,88 +11,79 @@
             box-sizing: border-box;
         }
 
-        /* button{
-            width: 100px;
-            border-color: red;
-            transition: 1s;
+        :root {
+            --glow-color-1: red;
+            --glow-color-2: Orangered;
+            --glow-color-3: orange;
         }
 
-        button:hover{
-            width: 200px;
-            border-color: yellow;
-
-        } */
-
-        .glow {
-            height: 500px;
-            width: 400px;
-            /* background: url('../image/mobile-2.png'); */
-            position: absolute;
-            animation: sagar 1s 3 forwards linear;
+        .glow-color-set-1 {
+            --glow-color-1: blue;
+            --glow-color-2: lightblue;
+            --glow-color-3: violet;
         }
 
-        @keyframes sagar {
+        .glow-color-set-2 {
+            --glow-color-1: green;
+            --glow-color-2: darkgreen;
+            --glow-color-3: yellowgreen;
+        }
+
+        .glow-border {
+            animation: glow-keyframes 3s infinite forwards linear;
+        }
+
+        .grow{
+            transition: 0.5s;
+        }
+        .grow:hover {
+            transform: scale(1.2);          
+        }
+
+        @keyframes glow-keyframes {
             0% {
-                /* rotate: 0; */
-                background: url('../image/mobile-2.png');            
+                border: 1px solid var(--glow-color-1);
+                background-color: var(--glow-color-2);
+            }
+
+            25% {
+                border: 1px solid var(--glow-color-2);
+                background-color: var(--glow-color-3);
+            }
+
+            75% {
+                border: 1px solid var(--glow-color-3);
+                background-color: var(--glow-color-1);
             }
 
             100% {
-                background: url('../image/m1.jpg');
+                border: 1px solid var(--glow-color-1);
+                background-color: var(--glow-color-2);
             }
         }
 
-        /* @keyframes sagar {
-            0% {
-                rotate: 0;
-            }
-
-            100% {
-               rotate: 360deg;
-            }
-        } */
-
-        /* button{
-            rotate: 90deg;
-        } */
-
-
-        /* .heading{
-            position: fixed;
-            height: 40px;
-            width: 600px;
-            left: 100%;
-            animation: marquee-anim 3s forwards infinite linear;
+        .button {
+            height: 2rem;
+            width: auto;
+            display: inline-block;
+            padding: 0.3rem;
+            border-radius: 1rem;
+            background-color: orange;
+            font-family: Arial, Helvetica, sans-serif;
+            color: white;
+            margin: 0.2rem;
         }
-
-
-        @keyframes marquee-anim {
-            0% {
-                left: 100%;         
-            }
-
-            100% {
-                left: -100%;
-                color: red;
-            }
-
-        } */
     </style>
 </head>
 
 <body>
-    <!-- <button>Login</button> -->
+    <div class="button glow-border"> Glowing button no Color set </div>
+    <div class="button glow-border grow glow-color-set-1"> Glowing button Color set 1</div>
+    <div class="button glow-border glow-color-set-2"> Glowing button Color set 2</div>
 
-    <!-- <button>Click me</button> -->
-
-    <div class="glow">a
-        asdf
-    </div>
-
-    <!-- <div class="heading">
-        askdjfklja;s kfjklsad jfkljsadkfljsakfjklsajfkljsaklfjasdklfjklasdjfklsdjklj jksd jkfjaklsdj fklasj
-    </div> -->
-
+<br>
+<br>
+    <button class="button grow">Click me</button>
 </body>
 
 </html>
